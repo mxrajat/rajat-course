@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python by Rajat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      overflow-x: hidden;
+    }
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1581091215369-7b6a0be7e8f1?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #00b4d8;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0077b6;
+    }
+    /* Sections */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+      animation: fadeUp 1s ease-in-out;
+    }
+    h2 {
+      color: #0077b6;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #023e8a;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      background: #caf0f8;
+      margin-top: 20px;
+    }
+    /* WhatsApp button */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+    .whatsapp-float i {
+      margin-top: 15px;
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      .hero p {
+        font-size: 1em;
+      }
+    }
+  </style>
+  <!-- Font Awesome for WhatsApp Icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Python by Rajat</h1>
+  <p>Learn Python with professional guidance, real-world projects, and practical skills in Hindi/English.</p>
+  <a href="#services" class="btn">Explore Services</a>
+</div>
+
+<!-- Services -->
+<section id="services">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card"><h3>Basics & Crash Course</h3><p>Learn Python from scratch with strong fundamentals.</p></div>
+    <div class="card"><h3>Projects & Portfolio</h3><p>Build real-world projects to showcase your skills.</p></div>
+    <div class="card"><h3>Interview Prep</h3><p>DSA, mock interviews, and resume building.</p></div>
+    <div class="card"><h3>Exam Coaching</h3><p>School/college syllabus with easy explanations.</p></div>
+    <div class="card"><h3>Freelance Guidance</h3><p>Learn to get clients and deliver projects.</p></div>
+    <div class="card"><h3>Custom Coaching</h3><p>One-to-one mentorship, flexible schedule.</p></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Rajat</h2>
+  <p style="text-align:center;">Main Rajat Mishra — practical Python teacher focusing on real skills, projects, and results. Teaching in Hindi/English with full personal support.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="text-align:center;">Email: <a href="mailto:rajat@example.com">rajat@example.com</a></p>
+  <p style="text-align:center;">WhatsApp: <a href="https://wa.me/919999999999" target="_blank">+91 99999 99999</a></p>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Footer -->
+<footer>
+  © 2025 Rajat Mishra — Python by Rajat. All rights reserved.
+</footer>
+
+</body>
+</html>
